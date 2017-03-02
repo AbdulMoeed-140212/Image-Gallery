@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Pictures Gallery</title>
+<style>
+body{
+	width: auto;
+	height:100%;
+	font:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color:#000;
+}
+.container
+{
+	width:95%;
+	margin:0 auto;
+}
+.Title
+{
+	background-color:white;
+	text-align:center;
+	text-decoration:underline;
+	text-shadow: 3px 4px solid black;
+	border: 5px solid #333;	
+}
+.list
+{
+	background-color:white;
+	float:left;
+	width: 15%;
+	padding:1%;
+	border: 5px solid #333;
+}
+.window{
+	background-color:white;
+	float:right;
+	width:75%;
+	padding: 1%;
+	border: 5px solid #333;
+    margin-right: 0;
+}
+.window div img
+{
+    width: 80%; 
+}
+.img img
+{
+	height: 25%;
+	width:100%;
+	padding: 1px;
+	border: 1px solid #666;
+}
+.img:hover
+{
+    border: 3px solid black;    
+}
+
+.mw img
+{   
+    height: 100%;
+}
+
+#we div{display: none}
+#we div:target{display: block}
+#we a
+{ 
+    padding:5px;
+    background-color: azure;
+    text-align: center;
+    text-rendering: optimizeSpeed;
+    text-decoration: none;
+}
+#we a:hover
+    {
+        background-color: cadetblue;
+    }
+</style>
+</head>
+
+<body>
+<div class="container"> 
+    <div class="Title">
+	    <h1>Picture Gallery</h1>
+    </div>
+    <div class="list">
+        <div class="img" ><a href="#a1"><img src="a3fece457e29ac98922b47b1e373cece.jpg" width="4000" height="3000" alt="img1" /></a></div>
+        <div class="img" ><a href="#b1"><img src="skyline-buildings-new-york-skyscrapers.jpg" width="5183" height="2444" alt="img2" /></a></div>
+        <div class="img" ><a href="#c1"><img src="Keep it Simple Keep it up.jpg" width="1242" height="474" alt="img3" /></a></div>
+        <div class="img" ><a href="#d1"><img src="Greenery-At-River-Side.jpg" width="1920" height="1080" alt="img4" /></a></div>
+    </div>
+  	<div class="window" id="we">
+    <div id="a1"> <img src="a3fece457e29ac98922b47b1e373cece.jpg"  alt="Image 1"> <a class="previous" href="#d1">&#x21DC;</a> <a class="next" href="#b1">&#x21DD;</a>
+    </div>
+    
+    <div id="b1" > <img src="skyline-buildings-new-york-skyscrapers.jpg" alt="Image 2"> <a class="previous" href="#a1">&#x21DC;</a> <a class="next" href="#c1">&#x21DD;</a>
+    </div>
+    
+    <div id="c1" > <img src="Keep it Simple Keep it up.jpg"  alt="Image 3"> <a class="previous" href="#b1">&#x21DC;</a> <a class="next" href="#d1">&#x21DD;</a>
+    </div>
+    
+    <div id="d1"> <img src="Greenery-At-River-Side.jpg"  alt="Image 4"> <a class="previous" href="#c1">&#x21DC;</a> <a class="next" href="#a1">&#x21DD;</a>
+    </div>
+
+    </div> 
+</div>   
+    
+</body>
+</html>
